@@ -63,14 +63,13 @@
         (mapcar(lambda (item)(concat "-I" item))  
                (split-string  
                 "
-/usr/include/c++/4.6
-/usr/include/c++/4.6/x86_64-linux-gnu/.
-/usr/include/c++/4.6/backward
-/usr/lib/gcc/x86_64-linux-gnu/4.6/include
+/usr/lib/gcc/x86_64-redhat-linux/4.8.1/../../../../include/c++/4.8.1
+/usr/lib/gcc/x86_64-redhat-linux/4.8.1/../../../../include/c++/4.8.1/x86_64-redhat-linux
+/usr/lib/gcc/x86_64-redhat-linux/4.8.1/../../../../include/c++/4.8.1/backward
+/usr/lib/gcc/x86_64-redhat-linux/4.8.1/include
 /usr/local/include
-/usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed
-/usr/include/x86_64-linux-gnu
 /usr/include
+
 ")))  
   (setq-default ac-sources '(ac-source-abbrev ac-source-dictionary ac-source-words-in-same-mode-buffers))  
   (add-hook 'emacs-lisp-mode-hook 'ac-emacs-lisp-mode-setup)  
